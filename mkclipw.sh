@@ -19,5 +19,5 @@ curl -X POST https://portal.muuktest.com:8081/download_byproperty -H @header.txt
 [ -d "./test" ] && rm -r test
 unzip test.zip -d ./test
 echo "Executing tests on Playwright"
-npx playwright test --workers=4 --project=chromium
+npx playwright test --workers=1 --project=chromium
 echo "Execution Completed."
